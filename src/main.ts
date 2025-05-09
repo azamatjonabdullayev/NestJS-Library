@@ -11,6 +11,7 @@ const startServer = async () => {
       forbidUnknownValues: true,
     }),
   );
+  app.setGlobalPrefix('api');
   app.listen(process.env.PORT || 4000, () => console.log('Server started'));
 };
 
